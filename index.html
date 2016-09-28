@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>Consulta Podologica Hostalric</title>
+	<meta http-equiv="Content-Language" content="es-ES" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
 	<meta name="description"  content="Clinica del Pie, especialistas en Podologia" />
 	<meta name="keywords"  content="Consulta, Podologia, Hostalric, Pie" />
 	<link rel="stylesheet" href="content/style.css" type="text/css" media="screen" />
 	<link rel="canonical" href="http://www.podologiahostalric.com/" />
 	<link rel='dns-prefetch' href='www.podologiahostalric.com' />
-	<link rel='shortlink' href='http://www.podologiahostalric.com/' />
-	<meta http-equiv="Content-Language" content="es-ES" />
+	<script type='text/javascript' src='js/functions.js'></script>
 </head>
 <body>
 	<div id="container">
@@ -40,7 +40,8 @@
 							<tbody>
 							<tr><td>
 								<div id="attachment_83" style="width: 214px" class="wp-caption alignleft">
-									<img class="size-full wp-image-83" title="Consulta" src="content/images/consulta.jpg" alt="Clinica del peu Hostalric" width="204" height="272" /><p class="wp-caption-text">Clinica del peu Hostalric</p></div>
+									<img class="size-full wp-image-83" title="Consulta" src="content/images/consulta.jpg" alt="Clinica del peu Hostalric" width="204" height="272" /><p class="wp-caption-text">Clinica del peu Hostalric</p>
+								</div>
 								</td>
 								<td valign= "top">&nbsp;<br />
 									En nuestra web podras encontrar información sobre&#8230;</p>
@@ -60,8 +61,8 @@
 				<ul>
 					<li id="qtranslate-3" class="widget widget_qtranslate">
 						<ul class="qtrans_language_chooser" id="qtranslate-3-chooser">
-							<li><span onclick="ponerIdioma('CA')">Català</span></li>
-							<li><span onclick="ponerIdioma('ES')">Español</span></li>
+							<li><span onclick="setIdioma('CA')">Català</span></li>
+							<li><span onclick="setIdioma('ES')">Castellano</span></li>
 						</ul>
 						<div class="qtrans_widget_end"></div>
 					</li>
@@ -77,7 +78,7 @@
 				</ul>
 			</div>
 		</div>
-		<div id="CA" style = "display:block">
+		<div id="CA" style = "display:none">
 			<div id="header">
 				<h1><a style="color:#FFFFFF" href="http://www.podologiahostalric.com">La Clínica del Peu</a></h1>
 				<a style="color:#006600; font-size:16px" href="http://www.podologiahostalric.com">Consulta Podologica Hostalric</a>
@@ -94,38 +95,38 @@
 				</div>
 			</div>
 			<div id="posts" class="page">
-					<div class="post" id="inicio">
-						<h2><a href="http://www.podologiahostalric.com/" title="Inicio">Inici</a></h2>				
-						<div class="entry">
-							<p><strong> </strong></p>
-							<p><strong>Benvingut a la Clinica del Peu</strong><br />
-							&nbsp;</p>
-							<table>
-							<tbody>
-							<tr><td>
-								<div id="attachment_83" style="width: 214px" class="wp-caption alignleft">
-									<img class="size-full wp-image-83" title="Consulta" src="content/images/consulta.jpg" alt="Clinica del peu Hostalric" width="204" height="272" /><p class="wp-caption-text">Clinica del peu Hostalric</p></div>
-								</td>
-								<td valign= "top">&nbsp;<br />
-									A la nostra pàgina web podras trobar informació de&#8230;</p>
-									<ul>
-										<li><a href="trabajo.html">Que fem&#8230;</a></li>
-										<li><a href="donde.html">On estem&#8230;</a></li>
-										<li><a href="contacta.html">Contacta&#8230;</a></li>
-									</ul>
-								</td>
-							</tr>
-							</tbody>
-							</table>
-						</div>
+				<div class="post" id="inicio">
+					<h2><a href="http://www.podologiahostalric.com/" title="Inicio">Inici</a></h2>				
+					<div class="entry">
+						<p><strong> </strong></p>
+						<p><strong onclick = "getIdioma()">Benvingut a la Clinica del Peu</strong><br />
+						&nbsp;</p>
+						<table>
+						<tbody>
+						<tr><td>
+							<div id="attachment_83" style="width: 214px" class="wp-caption alignleft">
+								<img class="size-full wp-image-83" title="Consulta" src="content/images/consulta.jpg" alt="Clinica del peu Hostalric" width="204" height="272" /><p class="wp-caption-text">Clinica del peu Hostalric</p></div>
+							</td>
+							<td valign= "top">&nbsp;<br />
+								A la nostra pàgina web podras trobar informació de&#8230;</p>
+								<ul>
+									<li><a href="trabajo.html">Que fem&#8230;</a></li>
+									<li><a href="donde.html">On estem&#8230;</a></li>
+									<li><a href="contacta.html">Contacta&#8230;</a></li>
+								</ul>
+							</td>
+						</tr>
+						</tbody>
+						</table>
 					</div>
+				</div>
 			</div>
 			<div class="sidebar">
 				<ul>
 					<li id="qtranslate-3" class="widget widget_qtranslate">
 						<ul class="qtrans_language_chooser" id="qtranslate-3-chooser">
-							<li><span onclick="ponerIdioma('CA')" href="">Català</span></li>
-							<li><span onclick="ponerIdioma('ES')" href="">Español</span></li>
+							<li><span onclick="setIdioma('CA')" href="">Català</span></li>
+							<li><span onclick="setIdioma('ES')" href="">Castellano</span></li>
 						</ul>
 						<div class="qtrans_widget_end"></div>
 					</li>
@@ -144,8 +145,6 @@
 		<div id="footer">
 			<p>Designed by E.M.M.</p>
 		</div>
-<!-- 		<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js'></script>
- -->	</div>
+	</div>
 </body>
-<script type="text/javascript" src= "/js/functions.js" ></script>
 </html>
